@@ -10,18 +10,13 @@
     <meta name="assunto" content="Um app para quem ama gatos e quer aprender sobre eles.">
     <link rel="icon" href="./img/icons8-cat-64.png">
     <link rel="stylesheet" href="estilo.css" type="text/css">
-    <style>
-        img {
-            width: 300px;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <h1>App meu Gatinho Fofionho 😺</h1>
         <nav aria-label="navegaçao primaria">
-            <ul>
+            <ul id="lista">
                 <li>
                     <a href="./fotosDeGatos.html">Fotos de gatos</a>
                 </li>
@@ -42,7 +37,7 @@
         <section>
             <h2>Fotos de gatos</h2>
             <p>Clique para ver mais <a href="./fotosDeGatos.html" target="_blank">fotos de gatos</a></p>
-            <a href="./fotosDeGatos.html" target="_blank"><img
+            <a href="./fotosDeGatos.html" target="_blank" id="linkFoto"><img
                     src="https://images.pexels.com/photos/669015/pexels-photo-669015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                     alt="Um gato rajado no jardim de um dia ensolarado"></a>
             <hr>
@@ -95,6 +90,7 @@
         </section>
         <p><a href="./index_feecodecamp.html">Voltar ao topo</a></p>
     </main>
+    <br>
     <footer>
         <p>&lt;Copyright&copy; App Meu Gatinho Fofinho&gt;</p>
     </footer>
