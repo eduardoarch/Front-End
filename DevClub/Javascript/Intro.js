@@ -53,8 +53,9 @@ OBS: Html, css e javascript ignoram os espaços entre os elementos.
 # Tipos de Dados
 - String --> Textos
 - Numbers --> Números
-- Boolean --> Boleano
-
+- Boolean --> Verdadeiro/Falso
+- Array --> Vetor --> Matriz      --> [] <--
+- Object --> Objeto
  */
 
 // Exemplos:
@@ -84,10 +85,76 @@ console.log(myString)
 
 // Numbers --> (NÚMEROS)
 
-const number1 = 32/2
+const number1 = 32 / 2
 const fakenumber = "32/2"
 
 console.log(number1)
 console.log(fakenumber)
 
-// Boolean --> (BOLEANO)
+// Boolean --> (false / true)
+
+// Object
+
+
+
+
+
+
+
+
+
+// Array ([])
+
+const myArray = [20, 30, 'Olá JS', { name: 'Eduardo', age: 36 }]
+
+// Exemplos:
+
+const eduardo = {
+    nome: 'Eduardo',
+    idade: 30,
+    nomeDoConjuge: 'Aline',
+    id: null,
+}
+
+const aline = {
+    nome: 'Aline',
+    idade: 39,
+    nomeDoConjuge: 'Eduardo',
+    id: null
+}
+
+// Simplificando o códio com Array
+
+// 1
+const users = [
+    {
+        nome: 'Eduardo',
+        idade: 30,
+        nomeDoConjuge: 'Aline',
+        id: null,
+    },
+    {
+        nome: 'Aline',
+        idade: 39,
+        nomeDoConjuge: 'Eduardo',
+        id: null
+    }
+]
+
+// 2
+const numberArray = [20, 40, 500]  /** A possição dos numeros começa pelo 0 */
+numberArray[0] = 1300 /** Consigo aterar um item do objeto, nesse caso o item 0 que de 20 foi substituido por 1300 */
+// console.log(numberArray[0])
+console.log(numberArray)
+
+// 3
+const users1 = [
+    {name:'Eduardo', age: 35},
+    {name:'Aline', age: 39},
+]
+users1[1].age = 29
+users1[0].name = 'Rosa dos Santos'
+console.log(users1)
+// console.log(users1[0])
+
+// Lembrando que o array começa da posição 0
