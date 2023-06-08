@@ -56,6 +56,16 @@ OBS: Html, css e javascript ignoram os espaços entre os elementos.
 - Boolean --> Verdadeiro/Falso
 - Array --> Vetor --> Matriz      --> [] <--
 - Object --> Objeto
+- Null & Undefined --> Nulo e Mensagem de Erro
+- if & else --> Controlador de fluxo
+    Controlador de Fluxo
+        - IF (se)
+        - Else (se não)
+    Operadores de Comparação
+        > maior que
+        < menor que
+        == igual que        
+- Functions --> Trecho de código que é executado SOMENTE quando solicitado.
  */
 
 // Exemplos:
@@ -95,21 +105,45 @@ console.log(fakenumber)
 
 // Object
 
+const eduardo = {
+    name: "Eduardo",
+    age: 35,
+    address: {
+        Street: 'Avenida Paulista',
+        number: '2530',
+        city: 'São Paulo',
+        state: 'SP',
+        country: 'Brasil',
+    }
+
+}
+eduardo.address.Street = 'Rua Frederico'
+// A variavel const permite a alteração de itens do objeto, não todo o objeto. Ex: feito a alteração do item Street.
+
+console.log(eduardo.address.Street)
 
 
+// Null & Undefined
 
+const users2 = {
+    name: 'Eduardo',
+    age: 35,
+    nameDoConjuge: 'Aline',
+    id: null,
+}
+users2.id = 'Adiministrador'
 
-
-
+console.log(users2.id)
 
 
 // Array ([])
+// Lembrando que o array começa da posição 0
 
 const myArray = [20, 30, 'Olá JS', { name: 'Eduardo', age: 36 }]
 
 // Exemplos:
 
-const eduardo = {
+const eduardoRosa = {
     nome: 'Eduardo',
     idade: 30,
     nomeDoConjuge: 'Aline',
@@ -149,12 +183,58 @@ console.log(numberArray)
 
 // 3
 const users1 = [
-    {name:'Eduardo', age: 35},
-    {name:'Aline', age: 39},
+    { name: 'Eduardo', age: 35 },
+    { name: 'Aline', age: 39 },
 ]
 users1[1].age = 29
 users1[0].name = 'Rosa dos Santos'
 console.log(users1)
 // console.log(users1[0])
 
-// Lembrando que o array começa da posição 0
+
+// if & else
+
+/** Controlador de Fluxo
+- IF (se)
+- Else (se não)
+Operadores de Comparação
+> maior que
+< menor que
+== igual que 
+*/
+const notaDoAluno = 4
+const notaDeCorte = 5
+
+if (notaDoAluno > notaDeCorte) {
+    // O QUE SERÁ EXECUTADO, SE O IF FOR VERDADEIRO
+    console.log('Parabéns, você passou de ano')
+} else {
+    // SE O IF FOR FALSO, ELE ENTRA AQUI
+    console.log('Lamentamos informa que você foi reprovado')
+}
+// if(notaDoAluno < notaDeCorte){
+//     console.log('Lamentamos, mas você não passou de ano')
+// }
+
+const senha = 2626
+const senhaDigitada = 2626
+
+if (senhaDigitada == senha) {
+    console.log('Seja bem vindo, você esta logado(a)!')
+} else {
+    console.log('Senha Incorreta')
+}
+
+// Functions 
+// Trecho de código que é executado SOMENTE quando solicitado.
+
+const variavel = 'hortifruts'
+
+console.log(variavel)
+
+function nomeNaTela() {
+    // ESSE TRECHO É IGNORADO, PELA EXECUÇÃO A MENOS QUE EU O CHAME
+    console.log('Eduardo')
+}
+
+nomeNaTela() //CHAMEI A FUNÇÃO ACIMA COM ESSE CÓDIGO, TAMBEM POSSO CHAMAR QUANTAS VEZES EU QUISER
