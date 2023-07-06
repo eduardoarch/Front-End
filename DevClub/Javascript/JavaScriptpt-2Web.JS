@@ -34,18 +34,33 @@ console.log(elementAll)
 // Alterando textos & HTML no JavaScript
 /**
 textContent -> Pega todo o conteúdo
-innerText -> Pega APENAS o texto 
-innerHTML -> Permite adicionar HTML  e texto
- */
-
-
-const elementeAlterando = document.querySelector('.paragraph-js')
+innerText -> Pega APENAS o texto (leva em conta o CSS)
+innerHTML -> Permite adicionar HTML  e texto (suporta adição de tags)
+ 
+const elementeAlterando = document.querySelector('p')
 
 // elementeAlterando.textContent = 'Alterado pelo textContent'
 // elementeAlterando.innerText = 'Alterado pelo innerText'
 // elementeAlterando.innerHTML = 'Alterado pelo innerHTML'
-
-// console.log(elementeAlterando.textContent)
-// console.log(elementeAlterando.innerText)
+console.log(elementeAlterando.textContent)
+console.log(elementeAlterando.innerText)
 console.log(elementeAlterando.innerHTML)
+*/
 
+// Alterando CSS(estilos) no JavaScript
+
+const buttonCliqueAqui = document.querySelector('.main-button')
+const buttonEnvieSeusDados = document.querySelector('.main-input')
+const h1TituloDaPaginaHome = document.querySelector('h1')
+const campoDigiteAqui = document.querySelector('#main-input')
+
+campoDigiteAqui.style.fontFamily = 'Fira'
+campoDigiteAqui.style.margin = '5px 100px 10px 100px'
+h1TituloDaPaginaHome.style.fontSize = '60px'
+h1TituloDaPaginaHome.style.fontFamily = ''
+buttonEnvieSeusDados.style.color = 'white'
+buttonEnvieSeusDados.style.background = 'blue'
+buttonEnvieSeusDados.style.fontSize = '16px'
+buttonCliqueAqui.style.background = 'purple'
+buttonCliqueAqui.style.color = 'white'
+buttonCliqueAqui.style.fontSize = '16px'
