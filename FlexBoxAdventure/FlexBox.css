@@ -1,0 +1,24 @@
+/*
+Values:
+        center
+        
+        flex-start
+        
+        flex-end
+        
+        space-around
+        
+        space-between
+        
+        space-evenly
+*/
+
+#field {
+    display: flex;
+justify-content: flex-end;
+}
+
+#field {
+    display: flex;
+justify-content: space-between;
+}
