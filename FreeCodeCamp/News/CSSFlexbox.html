@@ -1,0 +1,52 @@
+<!-- https://www.freecodecamp.org/news/css-spacing-guide-for-web-devs/ -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox -->
+<!-- https://www.freecodecamp.org/news/learn-css-flexbox/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/ios/100/open-parcel.png">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+            height: 500px;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .item {
+            background-color: lightblue;
+            padding: 20px;
+            height: 50px;
+            width: auto;
+            flex-basis: 33.3%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <hr>
+    <br>
+    <figure style="align-items: center;text-align: center;">
+        <img src="https://hackmd.io/_uploads/B1gOoxIrn.png" alt="">
+        <figcaption>Illustration showing the gap between flex items
+        </figcaption>
+    </figure>
+    <hr>
+    <br>
+    <figure style="align-items: center; text-align: center;">
+        <img src="https://hackmd.io/_uploads/HyT7-sLSh.png" alt="">
+        <figcaption>Illustration showing justify-content, align-content, and flex-basis properties</figcaption>
+    </figure>
+</body>
+
+</html>
