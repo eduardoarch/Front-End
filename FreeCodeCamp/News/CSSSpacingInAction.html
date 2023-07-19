@@ -1,0 +1,93 @@
+<!-- https://www.freecodecamp.org/news/css-spacing-guide-for-web-devs/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/ios/100/open-parcel.png">
+    <title>CSS spacing in action</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f6f6f6;
+        }
+
+        .feedback-container {
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        .feedback-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            letter-spacing: 2.3px;
+            font-size: 24px;
+        }
+
+        .feedback-description {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .feedback-input{
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #dddd;
+            border-radius: 4px;
+        }
+        .feedback-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .feedback-button:hover{
+            background-color: #4caf45;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="feedback-container">
+        <h2 class="feedback-title">REVIEW FORM</h2>
+        <p class="feedback-description">We value your feedback! Your comments help us to understand your needs
+            better and improve our services. Please take a few moments to share your
+            thoughts.</p>
+        <form action="">
+            <input type="text" class="feedback-input" placeholder="Your Name" name="name" required>
+            <input type="email" class="feedback-input" placeholder="Your Email" name="email" required>
+            <textarea class="feedback-input" placeholder="You Feedback" name="feedback" required></textarea>
+            <button type="submit" class="feedback-button">Submit</button>
+        </form>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <figure style="text-align: center; align-items: center; margin: 50px;">
+        <img src="https://hackmd.io/_uploads/S1X_k4vSh.png" alt="">
+        <figcaption>Image showing the form with and without proper spacing
+        </figcaption>
+    </figure>
+</body>
+
+</html>
