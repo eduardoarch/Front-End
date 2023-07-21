@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #cacaca;
+    padding: 10px;
+    margin: 50px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items {
+    background-color: #ff0037;
+    color: #fff;
+    font-size: 35px;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* .items-3 {
+    height: 150px;
+}
+
+.items-4 {
+    font-size: 70px;
+}
+
+.items-5 {
+    font-size: 150px;
+}
+
+.items-2 {
+    font-size: 300px;
+} */
