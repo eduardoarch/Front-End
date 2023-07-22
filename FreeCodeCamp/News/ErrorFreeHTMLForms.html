@@ -1,0 +1,70 @@
+<!-- https://www.freecodecamp.org/news/how-to-build-error-free-html-forms/ -->
+<!-- https://wave.webaim.org/extension/ -->
+<!-- https://css-tricks.com/html-inputs-and-labels-a-love-story/ -->
+<!-- https://www.w3schools.com/html/html_forms_attributes.asp -->
+<!-- https://www.w3.org/WAI/tutorials/forms/labels/#labeling-buttons -->
+<!-- https://blog.logrocket.com/how-to-style-forms-with-css-a-beginners-guide/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/ios/100/open-parcel.png">
+    <link rel="stylesheet" href="ErrorFreeHTMLForms.css">
+    <title>Error-Free HTML Forms</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Contact Form</h1>
+            <p id="description">Want to work with me? Fill out the from below.</p>
+        </header>
+        <hr>
+        <!-- Form with properly associated labels and inputs -->
+        <form action="">
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" placeholder="Your First Name" required>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" placeholder="Your Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" pattern=".+@email\.com" placeholder="e.g. dantesmith@gmail" required>
+            </div>
+            <div class="form-group">
+                <h3>Message</h3>
+                <textarea name="massage" id="massage" cols="35" rows="12"
+                    placeholder="Write your message here..."></textarea>
+            </div>
+            <!-- Button input type  -->
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    Tip #1: Make Sure the Labels and Inputs Match.
+When I first started creating HTML forms, I would often use the following methods for creating email input fields:
+
+Email input using text as the id and name value
+<label id="text"> Your Email</label>
+<input type="text" id="text" name="text"> 
+
+Like the labels and inputs, I would get a red x on WAVE’s accessibility checker. In the results, it mentioned that a value attribute was missing, which makes it difficult for the screen reader to detect the button.
+
+With that in mind, I decided to do what most beginners do when creating this feature:
+A submit button created using the <button> element
+<button> Submit</button>
+
+With a new thirst for knowledge, I went to Google and found this article on how to create accessible form components. In the section about buttons, they recommend using the following methods to make this element semantic:  
+
+<input type="Submit" value="Submit">
+<button type="Submit">Submit</button>
+The first snippet uses Submit as the input type and value attribute. The second one uses the <button> element and submit as the type attribute.
+
+-->
