@@ -8,7 +8,7 @@ https://wiki.archlinux.org/title/Sudo_(Portugu%C3%AAs)
 TEM QUE SER FEITO COMO ROOT
 EDITOR=vim visudo
 
-%wheel      ALL=(ALL) ALL (DESCOMENTE)
+%wheel      ALL=(ALL) ALL (DESCOMENTE) 
 
 --------------------------------------------------------------------------DESABILITAR WATCHDOG----------------------------------------------------------------------------------
 https://forum.endeavouros.com/t/slightly-slower-boot-and-shutdown/4466/5
