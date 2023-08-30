@@ -131,3 +131,4 @@ sudo update-initramfs -u
 # Reinicie para aplicar as alterações
 sudo reboot
 
+
