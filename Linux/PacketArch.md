@@ -16,3 +16,20 @@ filemanager-actions nautilus-sendto nautilus-share seahorse-nautilus  easytag br
 liboobs decklink  nodejs-lts-hydrogen shotcut vscodium  
 
 
+
+Pacotes (47) alsa-card-profiles-1:0.3.79-1  aom-3.7.0-1  at-spi2-core-2.48.4-1  clamav-1.2.0-1
+             freetype2-2.13.2-1  glib2-2.76.5-1  gst-editing-services-1.22.5-2  gst-libav-1.22.5-2
+             gst-plugin-gtk-1.22.5-2  gst-plugin-msdk-1.22.5-2  gst-plugin-opencv-1.22.5-2
+             gst-plugin-pipewire-1:0.3.79-1  gst-plugin-qmlgl-1.22.5-2  gst-plugin-va-1.22.5-2
+             gst-plugin-wpe-1.22.5-2  gst-plugins-bad-1.22.5-2  gst-plugins-bad-libs-1.22.5-2
+             gst-plugins-base-1.22.5-2  gst-plugins-base-libs-1.22.5-2  gst-plugins-good-1.22.5-2
+             gst-plugins-ugly-1.22.5-2  gst-python-1.22.5-2  gst-rtsp-server-1.22.5-2  gstreamer-1.22.5-2
+             gstreamer-docs-1.22.5-2  gstreamer-vaapi-1.22.5-2  hidapi-0.14.0-2  imagemagick-7.1.1.15-3
+             imath-3.1.9-2  ladspa-1.17-4  libdeflate-1.18-1  libjxl-0.8.2-2  libpipewire-1:0.3.79-1
+             m17n-db-1.8.3-1  m17n-lib-1.8.4-1  net-snmp-5.9.1-8  opencv-4.8.0-5  openexr-3.2.0-2
+             openjpeg2-2.5.0-3  pipewire-1:0.3.79-1  pipewire-alsa-1:0.3.79-1  pipewire-audio-1:0.3.79-1
+             pipewire-jack-1:0.3.79-1  pipewire-pulse-1:0.3.79-1  sane-1.2.1-5  vim-9.0.1844-1
+             vim-runtime-9.0.1844-1
+
+
+
