@@ -260,3 +260,11 @@ git clone https://aur.archlinux.org/packages/epson-inkjet-printer-201207w
 SOMENTE PARA PESQUISA OS LINKs ABAIXO:
 https://wiki.archlinux.org/title/CUPS#Manufacturer-specific_drivers
 https://wiki.archlinux.org/title/CUPS/Printer-specific_problems
+
+
+Dependências opcionais para chromium
+    pipewire: WebRTC desktop sharing under Wayland [instalado]
+    kdialog: support for native dialogs in Plasma
+    qt5-base: enable Qt5 with --enable-features=AllowQt [instalado]
+    org.freedesktop.secrets: password storage backend on GNOME / Xfce [instalado]
+    kwallet: support for storing passwords in KWallet on Plasma
