@@ -132,3 +132,184 @@ sudo update-initramfs -u
 sudo reboot
 
 
+
+
+
+[eduardo@archlinux ~]$ yay -S libva-intel-driver-hybrid
+AUR Explicit (1): libva-intel-driver-hybrid-2.4.1-2
+Sync Make Dependency (1): meson-1.2.1-1
+:: (1/1) PKGBUILD transferido: libva-intel-driver-hybrid
+  1 libva-intel-driver-hybrid        (Arquivos de Build Existem)
+==> Limpar e construir quais pacotes?
+==> [N]Nenhum [A]Todos [Ab]Abortar [I]Instalados [No]Não Instalados ou (1 2 3, 1-3, ^4)
+==> N
+  1 libva-intel-driver-hybrid        (Arquivos de Build Existem)
+==> Exibir Diffs?
+==> [N]Nenhum [A]Todos [Ab]Abortar [I]Instalados [No]Não Instalados ou (1 2 3, 1-3, ^4)
+==> N
+==> Criando o pacote: libva-intel-driver-hybrid 2.4.1-2 (ter 12 set 2023 09:52:07)
+==> Obtendo fontes...
+  -> Clonando repositório intel-vaapi-driver do tipo git...
+Cloning into bare repository '/home/eduardo/.cache/yay/libva-intel-driver-hybrid/intel-vaapi-driver'...
+remote: Enumerating objects: 17044, done.
+remote: Counting objects: 100% (74/74), done.
+remote: Compressing objects: 100% (44/44), done.
+remote: Total 17044 (delta 45), reused 43 (delta 30), pack-reused 16970
+Receiving objects: 100% (17044/17044), 8.81 MiB | 3.48 MiB/s, done.
+Resolving deltas: 100% (13311/13311), done.
+==> ATENÇÃO: Ignorando verificação de assinaturas PGP de arquivo fonte.
+==> Validando source arquivos com sha256sums...
+    intel-vaapi-driver ... Ignorada
+:: Remover dependências make após a instalação? [s/N] 
+:: (1/1) Analisando SRCINFO: libva-intel-driver-hybrid
+[sudo] senha para eduardo: 
+Sinto muito, tente novamente.
+[sudo] senha para eduardo: 
+resolvendo dependências...
+procurando pacotes conflitantes...
+
+Pacotes (4) ninja-1.11.1-3  python-tqdm-4.66.1-2  python-typing_extensions-4.7.1-1  meson-1.2.1-1
+
+Tamanho total download:    2,33 MiB
+Tamanho total instalado:  14,46 MiB
+
+:: Continuar a instalação? [S/n] 
+:: Obtendo pacotes...
+ python-typing_extensions-4.7.1-1-any    67,5 KiB  33,9 KiB/s 00:02 [-------------------------------------] 100%
+ python-tqdm-4.66.1-2-any               132,5 KiB  59,3 KiB/s 00:02 [-------------------------------------] 100%
+ ninja-1.11.1-3-x86_64                  145,4 KiB  64,3 KiB/s 00:02 [-------------------------------------] 100%
+ meson-1.2.1-1-any                     2037,3 KiB   530 KiB/s 00:04 [-------------------------------------] 100%
+ Total (4/4)                              2,3 MiB   562 KiB/s 00:04 [-------------------------------------] 100%
+(4/4) verificando chaves no chaveiro                                [-------------------------------------] 100%
+(4/4) verificando integridade do pacote                             [-------------------------------------] 100%
+(4/4) carregando arquivos do pacote                                 [-------------------------------------] 100%
+(4/4) verificando conflitos de arquivos                             [-------------------------------------] 100%
+(4/4) verificando espaço em disco disponível                        [-------------------------------------] 100%
+:: Processando alterações do pacote...
+(1/4) instalando ninja                                              [-------------------------------------] 100%
+(2/4) instalando python-tqdm                                        [-------------------------------------] 100%
+Dependências opcionais para python-tqdm
+    python-requests: telegram
+(3/4) instalando python-typing_extensions                           [-------------------------------------] 100%
+(4/4) instalando meson                                              [-------------------------------------] 100%
+:: Executando hooks pós-transação...
+(1/2) Arming ConditionNeedsUpdate...
+(2/2) Configure symlinks in /usr/local/bin based on firecfg.config...
+==> Criando o pacote: libva-intel-driver-hybrid 2.4.1-2 (ter 12 set 2023 09:52:54)
+==> Verificando as dependências de tempo de execução...
+==> Verificando as dependências de tempo de compilação...
+==> Obtendo fontes...
+  -> Atualizando repositório intel-vaapi-driver do tipo git...
+==> Validando source arquivos com sha256sums...
+    intel-vaapi-driver ... Ignorada
+==> Removendo diretório $srcdir/ existente...
+==> Extraindo fontes...
+  -> Criando cópia de trabalho do repositório intel-vaapi-driver do tipo git...
+Cloning into 'intel-vaapi-driver'...
+done.
+Switched to a new branch 'makepkg'
+==> Iniciando prepare()...
+==> Iniciando pkgver()...
+==> Os fontes estão prontos.
+==> Criando o pacote: libva-intel-driver-hybrid 2.4.1-2 (ter 12 set 2023 09:52:58)
+==> Verificando as dependências de tempo de execução...
+==> Verificando as dependências de tempo de compilação...
+==> ATENÇÃO: Usando a árvore do $srcdir/ existente
+==> Iniciando pkgver()...
+==> Iniciando build()...
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_lto=true -D b_pie=true -D python.bytecompile=1 -Denable_hybrid_codec=true intel-vaapi-driver build
+The Meson build system
+Version: 1.2.1
+Source dir: /home/eduardo/.cache/yay/libva-intel-driver-hybrid/src/intel-vaapi-driver
+Build dir: /home/eduardo/.cache/yay/libva-intel-driver-hybrid/src/build
+Build type: native build
+Project name: intel-vaapi-driver
+Project version: 2.4.1.0
+C compiler for the host machine: cc (gcc 13.2.1 "cc (GCC) 13.2.1 20230801")
+C linker for the host machine: cc ld.bfd 2.41.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Library dl found: YES
+Library m found: YES
+Program git found: YES (/usr/bin/git)
+Run-time dependency threads found: YES
+Found pkg-config: /usr/bin/pkg-config (1.8.1)
+Run-time dependency libdrm found: YES 2.4.116
+Run-time dependency libdrm_intel found: YES 2.4.116
+Run-time dependency libva found: YES 1.19.0
+Run-time dependency libva-x11 found: YES 1.19.0
+Run-time dependency wayland-client found: YES 1.22.0
+Program wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Run-time dependency libva-wayland found: YES 1.19.0
+intel-vaapi-driver/src/meson.build:10: DEPRECATION: configuration_data.set10 with number. the `set10` method should only be used with booleans
+intel-vaapi-driver/src/meson.build:13: DEPRECATION: configuration_data.set10 with number. the `set10` method should only be used with booleans
+Checking for function "log2f" : YES 
+Configuring config.h using configuration
+WARNING: You should add the boolean check kwarg to the run_command call.
+         It currently defaults to false,
+         but it will default to true in future releases of meson.
+         See also: https://github.com/mesonbuild/meson/issues/9300
+Configuring intel_version.h using configuration
+Build targets in project: 3
+NOTICE: Future-deprecated features used:
+ * 0.56.0: {'dependency.get_pkgconfig_variable', 'meson.source_root'}
+
+intel-vaapi-driver 2.4.1.0
+
+  User defined options
+    auto_features      : enabled
+    buildtype          : plain
+    libexecdir         : lib
+    prefix             : /usr
+    sbindir            : bin
+    wrap_mode          : nodownload
+    python.bytecompile : 1
+    b_lto              : true
+    b_pie              : true
+    enable_hybrid_codec: true
+
+Found ninja-1.11.1 at /usr/bin/ninja
+ninja: Entering directory `build'                                                                               
+[79/79] Linking target src/i965_drv_video.so
+==> Entrando no ambiente de fakeroot...
+==> Iniciando package()...
+ninja: Entering directory `/home/eduardo/.cache/yay/libva-intel-driver-hybrid/src/build'
+ninja: no work to do.
+Installing src/i965_drv_video.so to /home/eduardo/.cache/yay/libva-intel-driver-hybrid/pkg/libva-intel-driver-hybrid/usr/lib/dri
+==> Organizando a instalação...
+  -> Removendo arquivos libtool...
+  -> Expurgando arquivos indesejados...
+  -> Removendo arquivos de biblioteca estática...
+  -> Removendo símbolos desnecessários dos executáveis e bibliotecas...
+  -> Comprimindo páginas de man e info...
+==> Verificando problemas de empacotamento...
+==> Criando o pacote "libva-intel-driver-hybrid"...
+  -> Gerando o arquivo .PKGINFO...
+  -> Gerando o arquivo .BUILDINFO...
+  -> Gerando o arquivo .MTREE ...
+  -> Compactando o pacote...
+==> Saindo do ambiente de fakeroot.
+==> Compilação concluída: libva-intel-driver-hybrid 2.4.1-2 (ter 12 set 2023 09:53:28)
+==> Limpando...
+carregando pacotes...
+resolvendo dependências...
+procurando pacotes conflitantes...
+:: libva-intel-driver-hybrid e libva-intel-driver estão em conflito. Remover libva-intel-driver? [s/N] s
+
+Pacotes (2) libva-intel-driver-2.4.1-2 [remover]  libva-intel-driver-hybrid-2.4.1-2
+
+Tamanho total instalado:  7,80 MiB
+Alteração no tamanho:     0,01 MiB
+
+:: Continuar a instalação? [S/n] 
+(1/1) verificando chaves no chaveiro                                [-------------------------------------] 100%
+(1/1) verificando integridade do pacote                             [-------------------------------------] 100%
+(1/1) carregando arquivos do pacote                                 [-------------------------------------] 100%
+(1/1) verificando conflitos de arquivos                             [-------------------------------------] 100%
+(2/2) verificando espaço em disco disponível                        [-------------------------------------] 100%
+:: Processando alterações do pacote...
+(1/1) removendo libva-intel-driver                                  [-------------------------------------] 100%
+(1/1) instalando libva-intel-driver-hybrid                          [-------------------------------------] 100%
+Dependências opcionais para libva-intel-driver-hybrid
+    intel-hybrid-codec-driver: Provides codecs with partial HW acceleration [instalado]
+:: Executando hooks pós-transação...
