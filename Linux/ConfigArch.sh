@@ -313,3 +313,53 @@ Alteração no tamanho:     0,01 MiB
 Dependências opcionais para libva-intel-driver-hybrid
     intel-hybrid-codec-driver: Provides codecs with partial HW acceleration [instalado]
 :: Executando hooks pós-transação...
+
+
+
+:: Iniciando atualização completa do sistema...
+resolvendo dependências...
+procurando pacotes conflitantes...
+
+Pacotes (3) broadcom-wl-6.30.223.271-500  linux-6.5.3.arch1-1  linux-headers-6.5.3.arch1-1
+
+Tamanho total download:   153,48 MiB
+Tamanho total instalado:  252,54 MiB
+Alteração no tamanho:       0,05 MiB
+
+:: Continuar a instalação? [S/n] 
+:: Obtendo pacotes...
+ broadcom-wl-6.30.223.271-500-x86_64   1453,8 KiB   105 KiB/s 00:14 [-------------------------------------] 100%
+ linux-headers-6.5.3.arch1-1-x86_64      24,6 MiB   227 KiB/s 01:51 [-------------------------------------] 100%
+ linux-6.5.3.arch1-1-x86_64             127,5 MiB   506 KiB/s 04:18 [-------------------------------------] 100%
+ Total (3/3)                            153,5 MiB   609 KiB/s 04:18 [-------------------------------------] 100%
+(3/3) verificando chaves no chaveiro                                [-------------------------------------] 100%
+(3/3) verificando integridade do pacote                             [-------------------------------------] 100%
+(3/3) carregando arquivos do pacote                                 [-------------------------------------] 100%
+(3/3) verificando conflitos de arquivos                             [-------------------------------------] 100%
+(3/3) verificando espaço em disco disponível                        [-------------------------------------] 100%
+:: Executando hooks pré-transação...
+(1/2) Removing linux initcpios...
+(2/2) Remove DKMS modules
+==> dkms remove --no-depmod blackmagic-io/12.5a15 -k 6.5.2-arch1-1
+==> depmod 6.5.2-arch1-1
+:: Processando alterações do pacote...
+(1/3) atualizando linux                                             [-------------------------------------] 100%
+(2/3) atualizando broadcom-wl                                       [-------------------------------------] 100%
+(3/3) atualizando linux-headers                                     [-------------------------------------] 100%
+:: Executando hooks pós-transação...
+(1/4) Arming ConditionNeedsUpdate...
+(2/4) Updating module dependencies...
+(3/4) Install DKMS modules
+==> dkms install --no-depmod linux-sgx-driver/2.14.r1.54c9c4c -k 6.5.3-arch1-1
+Error! Bad return status for module build on kernel: 6.5.3-arch1-1 (x86_64)
+Consult /var/lib/dkms/linux-sgx-driver/2.14.r1.54c9c4c/build/make.log for more information.
+==> WARNING: `dkms install --no-depmod linux-sgx-driver/2.14.r1.54c9c4c -k 6.5.3-arch1-1' exited 10
+==> dkms install --no-depmod blackmagic/12.5a15 -k 6.5.3-arch1-1
+Error! Bad return status for module build on kernel: 6.5.3-arch1-1 (x86_64)
+Consult /var/lib/dkms/blackmagic/12.5a15/build/make.log for more information.
+==> WARNING: `dkms install --no-depmod blackmagic/12.5a15 -k 6.5.3-arch1-1' exited 10
+==> dkms install --no-depmod blackmagic-io/12.5a15 -k 6.5.3-arch1-1
+==> depmod 6.5.3-arch1-1
+
+
+Probing GDK-Pixbuf loader modules...
