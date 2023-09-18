@@ -16,3 +16,9 @@ pacui expac fzf
 filemanager-actions nautilus-sendto nautilus-share seahorse-nautilus easytag brasero file-roller tilix nautilus-codeAUR code-nautilus-gitAUR bubblewrap ffmpegthumbnailer passim
 
 liboobs decklink nodejs-lts-hydrogen shotcut vscodium
+
+Pacotes (11) abseil-cpp-20230125.3-3  chromium-117.0.5938.88-1  gobject-introspection-runtime-1.78.1-1
+             intel-gmmlib-22.3.11-1  intel-media-driver-23.3.3-1  json-glib-1.8.0-1  libcamera-0.1.0-2
+             libcamera-ipa-0.1.0-2  libgirepository-1.78.1-1  libgweather-4-4.4.0-1  qt6-imageformats-6.5.2-2
+
+Pacotes (3) glslang-13.0.0-1  libplacebo-5.264.1-3  shaderc-2023.4-2
