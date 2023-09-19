@@ -22,3 +22,41 @@ Pacotes (11) abseil-cpp-20230125.3-3  chromium-117.0.5938.88-1  gobject-introspe
              libcamera-ipa-0.1.0-2  libgirepository-1.78.1-1  libgweather-4-4.4.0-1  qt6-imageformats-6.5.2-2
 
 Pacotes (3) glslang-13.0.0-1  libplacebo-5.264.1-3  shaderc-2023.4-2
+
+[eduardo@archlinux ~]$ sudo pacman -Syyu
+:: Sincronizando a base de dados de pacotes...
+ core                             127,6 KiB   416 KiB/s 00:00 [----------------------------------] 100%
+ extra                              8,3 MiB  1205 KiB/s 00:07 [----------------------------------] 100%
+:: Iniciando atualização completa do sistema...
+resolvendo dependências...
+procurando pacotes conflitantes...
+
+Pacotes (2) ffmpeg-2:6.0-11  onevpl-2023.3.1-1
+
+Tamanho total download:   12,27 MiB
+Tamanho total instalado:  40,87 MiB
+Alteração no tamanho:      3,46 MiB
+
+:: Continuar a instalação? [S/n] 
+:: Obtendo pacotes...
+ onevpl-2023.3.1-1-x86_64         936,0 KiB   691 KiB/s 00:01 [----------------------------------] 100%
+ ffmpeg-2:6.0-11-x86_64            11,4 MiB  1257 KiB/s 00:09 [----------------------------------] 100%
+ Total (2/2)                       12,3 MiB  1351 KiB/s 00:09 [----------------------------------] 100%
+(2/2) verificando chaves no chaveiro                          [----------------------------------] 100%
+(2/2) verificando integridade do pacote                       [----------------------------------] 100%
+(2/2) carregando arquivos do pacote                           [----------------------------------] 100%
+(2/2) verificando conflitos de arquivos                       [----------------------------------] 100%
+(2/2) verificando espaço em disco disponível                  [----------------------------------] 100%
+:: Processando alterações do pacote...
+(1/2) instalando onevpl                                       [----------------------------------] 100%
+Dependências opcionais para onevpl
+    intel-media-sdk: runtime for legacy Intel GPUs [instalado]
+    onevpl-intel-gpu: runtime for Tiger Lake and newer GPUs
+(2/2) atualizando ffmpeg                                      [----------------------------------] 100%
+Novas dependências opcionais para ffmpeg
+    intel-media-sdk: Intel QuickSync support (legacy) [instalado]
+    onevpl-intel-gpu: Intel QuickSync support
+:: Executando hooks pós-transação...
+(1/2) Arming ConditionNeedsUpdate...
+(2/2) Configure symlinks in /usr/local/bin based on firecfg.config...
+[eduardo@archlinux ~]$ 
