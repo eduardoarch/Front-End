@@ -13,7 +13,7 @@ intel-undervolt xf86-video-intel intel-gpu-tools libva-utils fakeroot dconf-edit
 
 pacui expac fzf
 
-filemanager-actions nautilus-sendto nautilus-share seahorse-nautilus easytag brasero file-roller tilix nautilus-codeAUR code-nautilus-gitAUR bubblewrap ffmpegthumbnailer passim
+filemanager-actions nautilus-sendto nautilus-share seahorse-nautilus easytag brasero file-roller tilix nautilus-codeAUR code-nautilus-gitAUR bubblewrap ffmpegthumbnailer passim libnvme
 
 liboobs decklink nodejs-lts-hydrogen shotcut vscodium
 
@@ -60,3 +60,63 @@ Novas dependências opcionais para ffmpeg
 (1/2) Arming ConditionNeedsUpdate...
 (2/2) Configure symlinks in /usr/local/bin based on firecfg.config...
 [eduardo@archlinux ~]$ 
+
+
+
+
+[eduardo@archlinux ~]$ sudo pacman -Syyu
+[sudo] senha para eduardo: 
+:: Sincronizando a base de dados de pacotes...
+ core                                   127,6 KiB   721 KiB/s 00:00 [--------------------------------------] 100%
+ extra                                    8,2 MiB  2,42 MiB/s 00:03 [--------------------------------------] 100%
+:: Iniciando atualização completa do sistema...
+resolvendo dependências...
+procurando pacotes conflitantes...
+
+Pacotes (24) appstream-0.16.3-1  at-spi2-core-2.50.0-1  glib-networking-1:2.78.0-1  gvfs-1.52.0-1
+             gvfs-afc-1.52.0-1  gvfs-goa-1.52.0-1  gvfs-google-1.52.0-1  gvfs-gphoto2-1.52.0-1
+             gvfs-mtp-1.52.0-1  gvfs-nfs-1.52.0-1  gvfs-smb-1.52.0-1  harfbuzz-8.2.1-1  harfbuzz-icu-8.2.1-1
+             libadwaita-1:1.4.0-1  libblockdev-3.0.3-4  libnvme-1.5-1  libp11-kit-0.25.0-2  libsoup3-3.4.3-1
+             licenses-20230917-1  p11-kit-0.25.0-2  tracker3-3.6.0-1  tracker3-miners-3.6.0-1  udisks2-2.10.1-1
+             webkit2gtk-4.1-2.42.0-1
+
+Tamanho total download:    37,15 MiB
+Tamanho total instalado:  166,42 MiB
+Alteração no tamanho:      27,48 MiB
+
+Novas dependências opcionais para libblockdev
+    exfatprogs: for exFAT filesystem support
+    f2fs-tools: for F2FS filesystem support
+    gobject-introspection-runtime: for Python integration [instalado]
+    nilfs-utils: for nilfs filesystem support
+    python: for Python integration [instalado]
+    udftools: for UDF filesystem support
+( 8/24) atualizando udisks2                                         [--------------------------------------] 100%
+( 9/24) atualizando harfbuzz                                        [--------------------------------------] 100%
+(10/24) atualizando tracker3                                        [--------------------------------------] 100%
+(11/24) atualizando gvfs                                            [--------------------------------------] 100%
+(12/24) atualizando gvfs-afc                                        [--------------------------------------] 100%
+(13/24) atualizando gvfs-goa                                        [--------------------------------------] 100%
+(14/24) atualizando gvfs-google                                     [--------------------------------------] 100%
+(15/24) atualizando gvfs-gphoto2                                    [--------------------------------------] 100%
+(16/24) atualizando gvfs-mtp                                        [--------------------------------------] 100%
+(17/24) atualizando gvfs-nfs                                        [--------------------------------------] 100%
+(18/24) atualizando gvfs-smb                                        [--------------------------------------] 100%
+(19/24) atualizando harfbuzz-icu                                    [--------------------------------------] 100%
+(20/24) instalando appstream                                        [--------------------------------------] 100%
+(21/24) atualizando libadwaita                                      [--------------------------------------] 100%
+(22/24) atualizando licenses                                        [--------------------------------------] 100%
+(23/24) atualizando tracker3-miners                                 [--------------------------------------] 100%
+(24/24) atualizando webkit2gtk-4.1                                  [--------------------------------------] 100%
+:: Executando hooks pós-transação...
+( 1/10) Reloading system manager configuration...
+( 2/10) Creating temporary files...
+( 3/10) Reloading device manager configuration...
+( 4/10) Arming ConditionNeedsUpdate...
+( 5/10) Updating the appstream cache...
+✔ O cache de metadados foi atualizado com sucesso.
+( 6/10) Reloading system bus configuration...
+( 7/10) Configure symlinks in /usr/local/bin based on firecfg.config...
+( 8/10) Updating GIO module cache...
+( 9/10) Compiling GSettings XML schema files...
+(10/10) Reloading GVFS config...
