@@ -367,3 +367,11 @@ Novas dependências opcionais para libblockdev
 ( 8/10) Updating GIO module cache...
 ( 9/10) Compiling GSettings XML schema files...
 (10/10) Reloading GVFS config...
+
+
+
+systemd-libs-254.4-1-x86_64           1084,7 KiB   396 KiB/s 00:03 [--------------------------------------] 100%
+ systemd-sysvcompat-254.4-1-x86_64        6,0 KiB  29,6 KiB/s 00:00 [--------------------------------------] 100%
+ openssl-3.1.3-1-x86_64                   4,5 MiB   404 KiB/s 00:11 [--------------------------------------] 100%
+ systemd-254.4-1-x86_64                   7,7 MiB   564 KiB/s 00:14 [--------------------------------------] 100%
+ qt5-base-5.15.10+kde+r158-1-x86_64 
