@@ -1,4 +1,4 @@
-/**
+
 // getElementById -> Trás UM elemento pelo ID
 const input = document.getElementById('main-input')
 console.log(input)
@@ -16,36 +16,35 @@ const elementName = document.getElementsByName('nomeCompleto')
 console.log(elementName)
 
 // querySelector -> Trás UM elemento, e o PRIMEIRO que encontrar
-/* 
+
     Exemplos:
     const elementSelector = document.querySelector('p')
     const elementSelector = document.querySelector('.paragraph-js')
     const elementSelector = document.querySelector('#main-input') 
-*/
-/*
+
 const elementSelector = document.querySelector('button.main-input')
 console.log(elementSelector)
 
 // querySelectorAll -> Trás TODOS os elementos que encontrar
 const elementAll = document.querySelectorAll('.paragraph-js')
 console.log(elementAll)
-*/
+
 
 // Alterando textos & HTML no JavaScript
-/**
+
 textContent -> Pega todo o conteúdo
 innerText -> Pega APENAS o texto (leva em conta o CSS)
 innerHTML -> Permite adicionar HTML  e texto (suporta adição de tags)
  
 const elementeAlterando = document.querySelector('p')
 
-// elementeAlterando.textContent = 'Alterado pelo textContent'
-// elementeAlterando.innerText = 'Alterado pelo innerText'
-// elementeAlterando.innerHTML = 'Alterado pelo innerHTML'
+elementeAlterando.textContent = 'Alterado pelo textContent'
+elementeAlterando.innerText = 'Alterado pelo innerText'
+elementeAlterando.innerHTML = 'Alterado pelo innerHTML'
 console.log(elementeAlterando.textContent)
 console.log(elementeAlterando.innerText)
 console.log(elementeAlterando.innerHTML)
-*/
+
 
 // Alterando CSS(estilos) no JavaScript
 
@@ -64,3 +63,6 @@ buttonEnvieSeusDados.style.fontSize = '16px'
 buttonCliqueAqui.style.background = 'purple'
 buttonCliqueAqui.style.color = 'white'
 buttonCliqueAqui.style.fontSize = '16px'
+
+// Eventos
+
