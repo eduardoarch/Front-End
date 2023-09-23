@@ -73,6 +73,25 @@ Consult /var/lib/dkms/linux-sgx-driver/2.14.r1.54c9c4c/build/make.log for more i
 ==> depmod 6.5.2-arch1-1
 
 
+(3/4) Install DKMS modules
+==> dkms install --no-depmod blackmagic-io/12.5a15 -k 6.5.4-arch2-1
+==> dkms install --no-depmod blackmagic/12.5a15 -k 6.5.4-arch2-1
+Error! Bad return status for module build on kernel: 6.5.4-arch2-1 (x86_64)
+Consult /var/lib/dkms/blackmagic/12.5a15/build/make.log for more information.
+==> WARNING: `dkms install --no-depmod blackmagic/12.5a15 -k 6.5.4-arch2-1' exited 10
+==> dkms install --no-depmod linux-sgx-driver/2.14.r1.54c9c4c -k 6.5.4-arch2-1
+Error! Bad return status for module build on kernel: 6.5.4-arch2-1 (x86_64)
+Consult /var/lib/dkms/linux-sgx-driver/2.14.r1.54c9c4c/build/make.log for more information.
+==> WARNING: `dkms install --no-depmod linux-sgx-driver/2.14.r1.54c9c4c -k 6.5.4-arch2-1' exited 10
+==> depmod 6.5.4-arch2-1
+(4/4) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux.img --microcode /boot/intel-ucode.img
+==> Starting build: '6.5.4-arch2-1'
+
+
+
 468  modinfo i915
   469  dmesg 
   470  sudo dmesg 
@@ -375,3 +394,60 @@ systemd-libs-254.4-1-x86_64           1084,7 KiB   396 KiB/s 00:03 [------------
  openssl-3.1.3-1-x86_64                   4,5 MiB   404 KiB/s 00:11 [--------------------------------------] 100%
  systemd-254.4-1-x86_64                   7,7 MiB   564 KiB/s 00:14 [--------------------------------------] 100%
  qt5-base-5.15.10+kde+r158-1-x86_64 
+
+
+
+ [eduardo@archlinux ~]$ sudo pacman -Syyu
+:: Sincronizando a base de dados de pacotes...
+ core                                   127,5 KiB   104 KiB/s 00:01 [--------------------------------------] 100%
+ extra                                    8,2 MiB   288 KiB/s 00:29 [--------------------------------------] 100%
+:: Iniciando atualização completa do sistema...
+resolvendo dependências...
+procurando pacotes conflitantes...
+
+Pacotes (7) argyllcms-3.0.0-1  chromium-117.0.5938.92-2  filesystem-2023.09.18-1  onevpl-intel-gpu-23.3.3-1
+            pambase-20230918-1  rsync-3.2.7-5  shadow-4.14.0-3
+
+Tamanho total download:   105,06 MiB
+Tamanho total instalado:  458,32 MiB
+Alteração no tamanho:      22,56 MiB
+
+:: Continuar a instalação? [S/n] 
+:: Obtendo pacotes...
+ shadow-4.14.0-3-x86_64                1171,9 KiB  49,2 KiB/s 00:24 [--------------------------------------] 100%
+ rsync-3.2.7-5-x86_64                   335,3 KiB  47,8 KiB/s 00:07 [--------------------------------------] 100%
+ filesystem-2023.09.18-1-any             14,4 KiB  4,84 KiB/s 00:03 [--------------------------------------] 100%
+ pambase-20230918-1-any                   3,1 KiB   903   B/s 00:04 [--------------------------------------] 100%
+ onevpl-intel-gpu-23.3.3-1-x86_64         3,3 MiB  58,7 KiB/s 00:58 [--------------------------------------] 100%
+ argyllcms-3.0.0-1-x86_64                 7,1 MiB  60,8 KiB/s 01:59 [--------------------------------------] 100%
+ chromium-117.0.5938.92-2-x86_64         93,2 MiB   574 KiB/s 02:46 [--------------------------------------] 100%
+ Total (7/7)                            105,1 MiB   646 KiB/s 02:47 [--------------------------------------] 100%
+(7/7) verificando chaves no chaveiro                                [--------------------------------------] 100%
+(7/7) verificando integridade do pacote                             [--------------------------------------] 100%
+(7/7) carregando arquivos do pacote                                 [--------------------------------------] 100%
+(7/7) verificando conflitos de arquivos                             [--------------------------------------] 100%
+(7/7) verificando espaço em disco disponível                        [--------------------------------------] 100%
+:: Processando alterações do pacote...
+(1/7) atualizando filesystem                                        [--------------------------------------] 100%
+atenção: /etc/profile instalado como /etc/profile.pacnew
+atenção: /etc/shells instalado como /etc/shells.pacnew
+atenção: permissões de diretório diferem em /root/
+sistema de arquivos: 700  pacote: 750
+(2/7) atualizando argyllcms                                         [--------------------------------------] 100%
+(3/7) atualizando pambase                                           [--------------------------------------] 100%
+(4/7) atualizando shadow                                            [--------------------------------------] 100%
+(5/7) atualizando chromium                                          [--------------------------------------] 100%
+(6/7) atualizando onevpl-intel-gpu                                  [--------------------------------------] 100%
+(7/7) atualizando rsync                                             [--------------------------------------] 100%
+:: Executando hooks pós-transação...
+(1/9) Creating system user accounts...
+Creating group 'groups' with GID 967.
+(2/9) Reloading system manager configuration...
+(3/9) Applying kernel sysctl settings...
+(4/9) Creating temporary files...
+(5/9) Reloading device manager configuration...
+(6/9) Arming ConditionNeedsUpdate...
+(7/9) Configure symlinks in /usr/local/bin based on firecfg.config...
+(8/9) Updating icon theme caches...
+(9/9) Updating the desktop file MIME type cache...
+[eduardo@archlinux ~]$ 
