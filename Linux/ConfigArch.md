@@ -14,7 +14,7 @@ EDITOR=vim visudo
 https://forum.endeavouros.com/t/slightly-slower-boot-and-shutdown/4466/5
 https://wiki.archlinux.org/title/Improving_performance_(Portugu%C3%AAs)
 
-To disable watchdog timers (both software and hardware), append nowatchdog to your boot parameters.
+## To disable watchdog timers (both software and hardware), append nowatchdog to your boot parameters.
 
 e.g. sudo vim /etc/default/grub
 add nowatchdog to the kernel line like so:
@@ -32,6 +32,9 @@ sudo vim /etc/modprobe.d/watchdog.conf
 blacklist iTCO_wdt 
 blacklist iTCO_vendor_support
 blacklist sp5100_tco
+
+sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch --recheck
+sudo grub-mkconfig -o /boot/grub/grub.cfg 
 
 ------------------------------Install TLP-------------------------------------
 sudo vim /etc/tlp.conf 
