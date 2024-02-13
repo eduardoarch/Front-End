@@ -1,0 +1,21 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+
+MOZ_ENABLE_WAYLAND=1 firefox
+GTK_THEME=Adwaita:dark
+#LIBVA_DRI3_DISABLE=1
+LIBVA_DRIVER_NAME=iHD
+XDG_SEAT
+WESTON_LIBINPUT_LOG_PRIORITY
+WAYLAND_DISPLAY
+_JAVA_AWT_WM_NONREPARENTING
+
+
+EDITOR=vim
+XDG_CACHE_HOME=$HOME/.cache
+XDG_CONFIG_HOME=$HOME/.config
+XDG_DATA_HOME=$HOME/.local/share
+XDG_STATE_HOME=$HOME/.local/state
+
