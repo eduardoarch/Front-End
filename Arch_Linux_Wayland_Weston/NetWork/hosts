@@ -1,0 +1,29 @@
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+#
+# Arquivo /etc/hosts
+# # Servidores do Google
+# 172.217.168.14     google.com
+# 2607:f8b0:4004:809::200e  google.com
+# 172.217.168.14     www.google.com
+# 2607:f8b0:4004:809::200e  www.google.com
+
+# # Servidores do Cloudflare
+# 104.16.248.249     cloudflare.com
+# 104.16.248.249     www.cloudflare.com
+
+# The following lines are desirable for IPv6 capable hosts
+ ::1     localhost ip6-localhost ip6-loopback
+#
+# # The following lines are desirable for IPv4 capable hosts
+ 127.0.0.1 localhost
+# 127.0.1.1 your_hostname
+#
+# # Google servers
+ 8.8.8.8     google-public-dns-a.google.com
+ 8.8.4.4     google-public-dns-b.google.com
+#
+# # Cloudflare servers
+ 1.1.1.1    # one.one.one.one
+ 1.0.0.1    # one.one.one.one
+#
