@@ -5,6 +5,11 @@
 #https://man.archlinux.org/man/extra/xorg-server/xorg.conf.5.en#DisplaySize
 #
 
+// [eduardo@archlinux ~]$ sudo Xorg :2 -configure
+// (++) Using config file: "/root/xorg.conf.new"
+// (==) Using config directory: "/etc/X11/xorg.conf.d"
+// (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+// Number of created screens does not match number of detected devices.
 
 parse-edid < /sys/class/drm/card0-DP-3/edid
 Checksum Correct
