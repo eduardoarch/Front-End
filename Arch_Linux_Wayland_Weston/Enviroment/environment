@@ -3,12 +3,19 @@
 #
 # Syntax: simple "KEY=VAL" pairs on separate lines
 
-MOZ_ENABLE_WAYLAND=1 firefox
+MOZ_ENABLE_WAYLAND=1 #firefox
 GTK_THEME=Adwaita:dark
-#LIBVA_DRI3_DISABLE=1
+#LIBVA_DRI3_DISABLE=1 (Este pode ser descomentado se necessário)
 LIBVA_DRIVER_NAME=iHD
-XDG_SEAT
-WESTON_LIBINPUT_LOG_PRIORITY
-WAYLAND_DISPLAY
-_JAVA_AWT_WM_NONREPARENTING
+XDG_SEAT=seat0
+WESTON_LIBINPUT_LOG_PRIORITY=debug
+WAYLAND_DISPLAY=wayland-0
+_JAVA_AWT_WM_NONREPARENTING=1
+WINDOW_MANAGER=weston
+VDPAU_DRIVER=va_gl
+
+#sha1sum /usr/lib/dri/* | sort
+LIBVA_DRIVERS_PATH=/usr/lib/dri/iHD_drv_video.so
+
+
 
