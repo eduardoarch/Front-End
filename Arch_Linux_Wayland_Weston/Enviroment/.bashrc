@@ -34,3 +34,7 @@ error() {
 # Exemplo de uso
 #error "This is an error!"
 #warning "This is just a warning."
+
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+
+fi
