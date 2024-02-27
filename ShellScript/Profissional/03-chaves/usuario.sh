@@ -6,6 +6,7 @@
 #
 # Versao 1: Mostra usuarios e nomes separados por TAB
 # Versao 2: Adicionar suporte a opcao -h
+# Versao 3: Adicionado suporte a opcao -V e opcoes ivalidas
 #
 # Eduardo, Fevereiro de 2024
 #
