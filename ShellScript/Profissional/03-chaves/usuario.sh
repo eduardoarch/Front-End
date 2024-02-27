@@ -11,18 +11,27 @@
 #
 
 MENSAGEM_USO="
-Uso: $0 [-h]
+Uso: $0 [-h|-V]
 
 -h Mostra esta tela de ajuda
-
+-V Mostra a versao do programa
 "
 
 # Tratamento das opcoes de linha de comando
-if test "$1" = "-h"
-then
-    echo "$MENSAGEM_USO"
-    exit 0
-fi
-
+case "$1" in
+    -h)
+	echo "$MENSAGEM_USO"
+	exit 0
+	;;
+    -V)
+	echo $0 Versao 3
+        exit 0
+	;;
+    *)
+	echo Opcao Invalida:$1
+	exit 1
+	;;
+esac
+    
 # Processamento
 cut -d : -f 1,5 /etc/passwd | tr : \\t
