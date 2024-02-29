@@ -10,20 +10,27 @@
 # Versao 4: Arrumando bug quando nao tem opcoes, basename no
 #			nome do programa, -V extraindo direto dos cabecalhos,
 #			adicionadas opcoes --help e --version
-#
+# Versao 5: Adiciionadas opcoes -s e --sort
 #
 # Eduardo, Fevereiro de 2024
 #
 
-MENSAGEM_USO="
-Uso: $0 [-h|-V]
+ordenar=0 # A saida devera ser ordenada?
 
+MENSAGEM_USO="
+Uso: $0 [-h|-V |-s]
+
+-s, --sort	Ordena a lista alfabeticamente
 -h, --help	Mostra esta tela de ajuda
 -V, --version	Mostra a versao do programa
 "
 
 # Tratamento das opcoes de linha de comando
 case "$1" in
+
+-s | --sort)
+	ordenar=1
+	;;
 -h | --help)
 	echo "$MENSAGEM_USO"
 	exit 0
@@ -42,5 +49,13 @@ case "$1" in
 	;;
 esac
 
-# Processamento
-cut -d : -f 1,5 /etc/passwd | tr : \\t
+# Extrair a listagem
+lista=$(cut -d : -f 1,5 /etc/passwd)
+
+# Ordena a listagem (se necessario)
+if test "$ordenar" = 1; then
+	lista=$(echo "$lista" | sort)
+fi
+
+# Mostra o resultado para o usuario
+echo "$lista" | tr : \\t
