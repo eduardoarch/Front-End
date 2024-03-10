@@ -18,6 +18,10 @@ mesa_glthread=true
 FUSE_PASSTHROUGH
 WESTON_CONFIG_FILE=/home/eduardo/.config/weston.ini
 WESTON_MODULE_DIR=/usr/lib/weston/
+GSK_RENDERER=gl
+-march=skylake
+-mapxf=skylake
+
 
 #sha1sum /usr/lib/dri/* | sort
 LIBVA_DRIVERS_PATH=/usr/lib/dri/iHD_drv_video.so
