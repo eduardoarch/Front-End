@@ -23,7 +23,7 @@
 ordenar=0    #	A saida devera ser ordenada?
 inverter=0   #	A saida devera ser invertida?
 maiusculas=0 #	A saida devera ser em maiusculas?
-delim="\\t"  #	Caracter usado como delimitador de saida.
+delim="\t"  #	Caracter usado como delimitador de saida.
 
 MENSAGEM_USO="
 Uso: $(basename "$0") [OPCOES]
@@ -78,18 +78,10 @@ done
 #	Extrair a listagem
 lista=$(cut -d : -f 1,5 /etc/passwd)
 
-#	Ordena a listagem (se necessario)
-if test "$ordenar" = 1; then
-	lista=$(echo "$lista" | sort)
-fi
-#	Inverte a listagem (se necessario)
-if test "$inverter" = 1; then
-	lista=$(echo "$lista" | tac)
-fi
-#	Converte para maisculas (se necessario)
-if test "$maiusculas" = 1; then
-	lista=$(echo "$lista" | tr a-z A-Z)
-fi
+#	Ordena, Inverte ou Converte a listagem (se necessario)
+test "$ordenar" = 1 && lista=$(echo "$lista" | sort)
+test "$inverter" = 1 && lista=$(echo "$lista" | tac)
+test "$maiusculas" = 1 && lista=$(echo "$lista" | tr a-z A-Z)
 
 #	Mostra o resultado para o usuario
 echo "$lista" | tr : "$delim"
