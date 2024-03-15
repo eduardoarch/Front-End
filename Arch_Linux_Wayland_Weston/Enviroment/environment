@@ -15,13 +15,20 @@ VDPAU_DRIVER=va_gl
 LIBVA_DRIVERS_PATH=/usr/lib/dri/iHD_drv_video.so
 DISPLAY=1
 mesa_glthread=true
-FUSE_PASSTHROUGH
+FUSE_PASSTHROUGH=1
 WESTON_CONFIG_FILE=/home/eduardo/.config/weston.ini
 WESTON_MODULE_DIR=/usr/lib/weston/
 GSK_RENDERER=gl
--march=skylake
--mapxf=skylake
-
+-march=xeon
+-mapxf=xeon
+-std=c2x
+-std=gnu2x
+kmd=enabled
+CONFIG_DRM_XE_FORCE_PROBE=1
+CONFIG_DRM_XE_DISPLAY=1
+CONFIG_DRM_XE=1
+CONFIG_DRM_I915=1
+Dintel-xe-kmd=enabled
 
 #sha1sum /usr/lib/dri/* | sort
 LIBVA_DRIVERS_PATH=/usr/lib/dri/iHD_drv_video.so
