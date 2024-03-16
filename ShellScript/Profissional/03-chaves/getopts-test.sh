@@ -20,3 +20,13 @@ while getopts ":sa:" opcao; do
     :) echo "ERRO Faltou argumento para: $OPTARG" ;;
     esac
 done
+#   O loop termina quando nenhuma opcao for encontrada.
+#   Mas ainda podem existir arqumentos, como um nome de arquivo.
+#   A variavel $OPTIND guarda o indice do resto da linha de
+#   comando, util para arrancar as opcoes ja processadas
+#
+echo
+shift $((OPTIND - 1))
+echo "INDICE: $OPTIND"
+echo "RESTO: $*"
+echo
