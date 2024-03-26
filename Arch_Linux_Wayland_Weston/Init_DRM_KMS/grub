@@ -3,7 +3,8 @@
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=1
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet i915.modeset=1  modeset=1 nowatchdog NMI_WATCHDOG=0 lvds_channel_mode=2 intel-ucode.img ahci.mobile_lpm_policy=1 fastboot=1 enable_guc=2 nuclear_pageflip=1 edp_vswi=2 mitigations=off dev.i915.perf_stream_paranoid=1 i915.enable_fbc=1 NMI_WATCHDOG=0 vga=0 video=0 acpi_backlight=video acpi_backlight=vendor acpi_backlight=native acpi_osi=Linux acpi_irq_balance FUSE_PASSTHROUGH=1 use_acpi=1 states_off=1 max_cstate=2 idle=nomwait i915.force_probe=1 xe.force_probe=1"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet intel-ucode.img nowatchdog intremap=no_x2apic_optout i915.force_probe=1 i915.modeset=1 i915.enable_guc=2 i915.lvds_channel_mode=2 ahci.mobile_lpm_policy=1 i915.nuclear_pageflip=1 edp_vswi=1 mitigations=off dev.i915.perf_stream_paranoid=1 i915.enable_fbc=1 vga=0
+ video=0 acpi_backlight=video acpi_backlight=vendor acpi_backlight=native acpi_osi=Linux acpi_irq_balance use_acpi=1 pci=use_crs"
 GRUB_CMDLINE_LINUX="rootfstype=btrfs acpi=on maxcpus=4 LANG=pt_BR.UTF-8 KEYTABLE=us"
 
 # Preload both GPT and MBR modules so that they are not missed
